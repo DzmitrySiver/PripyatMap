@@ -4,30 +4,32 @@
 	<meta charset="UTF-8">
 	<title>Pripyat Map v.1.0</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
 
-<div id="container">
-	<div class="zoom">
-		<a href="#" onclick="zoom(1)">1х</a>
-		<a href="#" onclick="zoom(1.1)">1.1х</a>
-		<a href="#" onclick="zoom(2)">2х</a>
-		<a href="#" onclick="zoom(4)">4х</a>
+<div class="wrapper">
+	<div class="controlPanel">
+		<a class="controlPanelButton" href="#">1х</a>
+		<a class="controlPanelButton" href="#">1.1х</a>
+		<a class="controlPanelButton" href="#">2х</a>
+		<a class="controlPanelButton" href="#">4х</a>
 	</div>
-	<div id="mapcontainer">
-		<div id="map">
-			<div id="b1" style="top: 20px; left: 32px; transform: rotate(36deg)"><a href="#"></a></div>
-			<div id="b2" style="top: 60px; left: 26px; transform: rotate(126deg)"><a href="#"></a></div>
-			<div id="b3" style="top: 28px; left: 96px; transform: rotate(126deg)"><a href="#"></a></div>
-			<div id="b4" style="top: 86px; left: 43px; transform: rotate(36deg)"><a href="#"></a></div>
-			<div id="b5" style="top: 126px; left: 46px; transform: rotate(36deg)"><a href="#"></a></div>
-			<div id="b6" style="top: 86px; left: 126px; transform: rotate(126deg)"><a href="#"></a></div>
+	<div class="mapWrapper">
+		<div class="pripyatMap" id="pripyatMap">
+			<div class="buldingType1" id="b1" style="top: 20px; left: 32px; transform: rotate(36deg)"><a href="#"></a></div>
+			<div class="buldingType1" id="b2" style="top: 60px; left: 26px; transform: rotate(126deg)"><a href="#"></a></div>
+			<div class="buldingType1" id="b3" style="top: 28px; left: 96px; transform: rotate(126deg)"><a href="#"></a></div>
+			<div class="buldingType1" id="b4" style="top: 86px; left: 43px; transform: rotate(36deg)"><a href="#"></a></div>
+			<div class="buldingType1" id="b5" style="top: 126px; left: 46px; transform: rotate(36deg)"><a href="#"></a></div>
+			<div class="buldingType1" id="b6" style="top: 86px; left: 126px; transform: rotate(126deg)"><a href="#"></a></div>
 		</div>
 	</div>
 </div>
 
-<script src="script.js"></script>
+<script src="script/jquery-1.11.2.js"></script>
+<script src="script/jquery-ui-1.11.2/jquery-ui.js"></script>
+<script src="script/jquery-mousewheel-3.1.12/jquery.mousewheel.js"></script>
+<script src="script/script.js"></script>
 
 </body>
 </html>
