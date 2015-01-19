@@ -1,0 +1,52 @@
+body{
+	background-color: #e6d1b3;
+	margin: 0; width: 100%; height: 100%;
+	font-family: sans-serif;
+	color: #523b30;
+}
+#container{
+	margin: auto;
+	width: 400px;
+	height: 600px;
+	overflow: hidden;
+}
+#map{
+	background-color: #f6e8d5;
+	width: 500px;
+	height: 600px;
+	position: relative;
+	zoom: 1;
+}
+#map > div {
+	position: absolute;
+}
+div [id^="b"]{
+	width:10px;
+	height:40px;
+	background-color: #cd6735;
+}
+div [id^="b"] a { display: block; width: 100%; height: 100%; }
+div.zoom {
+	margin:20px 0;
+}
+div.zoom a {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	padding: 10px 0;
+	margin-right: 10px;
+	background-color: #f6e8d5;
+	box-shadow: 2px 2px #523b30;
+	color: #523b30;
+	text-decoration: none;
+	text-align: center;
+}
+div.zoom a:hover{
+	box-shadow: 3px 3px;
+}
+#indicator{
+	position: absolute;
+	top:  10px;
+	left: 10px;
+	font: 14px monospace;
+}
